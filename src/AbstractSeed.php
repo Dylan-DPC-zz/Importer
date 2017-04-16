@@ -1,6 +1,4 @@
-<?php
-
-namespace Dpc\Importer;
+<?php namespace Dpc\Importer;
 
 
 abstract class AbstractSeed

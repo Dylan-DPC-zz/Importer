@@ -1,7 +1,4 @@
-<?php
-
-
-namespace Dpc\Importer\Providers;
+<?php namespace Dpc\Importer\Providers;
 
 use Dpc\Importer\ForeignConnectionContract;
 use Dpc\Importer\ForeignConnectionManager;

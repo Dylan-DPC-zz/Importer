@@ -1,12 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: dpc
- * Date: 25/3/17
- * Time: 12:32 AM
- */
-
-namespace Dpc\Importer;
+<?php namespace Dpc\Importer;
 
 
 use Illuminate\Support\Facades\DB;
