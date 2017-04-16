@@ -1,0 +1,16 @@
+{
+    "name": "dpc/importer",
+    "description": "Laravel package for importing data from another database",
+    "type": "library",
+    "require": {
+        "php": "^7.0",
+        "illuminate/support": "5.4.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dylan DPC",
+            "email": "dylan.dpc@gmail.com"
+        }
+    ]
+}
