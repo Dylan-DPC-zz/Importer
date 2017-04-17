@@ -12,5 +12,10 @@
             "name": "Dylan DPC",
             "email": "dylan.dpc@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dpc\\Importer\\": "src/"
+        }
+    }
 }
