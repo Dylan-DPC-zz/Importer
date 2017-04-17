@@ -1,5 +1,6 @@
 <?php namespace Dpc\Importer\Providers;
 
+use Dpc\Importer\Commands\ImportData;
 use Dpc\Importer\ForeignConnectionContract;
 use Dpc\Importer\ForeignConnectionManager;
 use Dpc\Importer\Importer;
@@ -15,7 +16,11 @@ class ImporterServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                ImportData::class
+            ]);
+        }
     }
 
     /**
