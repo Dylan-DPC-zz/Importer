@@ -3,7 +3,7 @@
 use Dpc\Importer\ImporterContract;
 use Illuminate\Console\Command;
 
-class ImportDataFromSql extends Command
+class ImportData extends Command
 {
     /**
      * The name and signature of the console command.
