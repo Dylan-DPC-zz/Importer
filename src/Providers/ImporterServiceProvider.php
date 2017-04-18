@@ -1,4 +1,6 @@
-<?php namespace Dpc\Importer\Providers;
+<?php
+
+namespace Dpc\Importer\Providers;
 
 use Dpc\Importer\Commands\ImportData;
 use Dpc\Importer\ForeignConnectionContract;
@@ -23,7 +25,7 @@ class ImporterServiceProvider extends ServiceProvider
         }
 
         $this->publishes([
-            __DIR__ . '/../config.php' => config_path('importer.php'),
+            __DIR__ . '/../../config/importer.php' => config_path('importer.php'),
         ]);
     }
 
@@ -35,7 +37,6 @@ class ImporterServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(ImporterContract::class, Importer::Class);
-        $this->app->bind(ForeignConnectionContract::class,
-            ForeignConnectionManager::class);
+        $this->app->bind(ForeignConnectionContract::class, ForeignConnectionManager::class);
     }
 }
