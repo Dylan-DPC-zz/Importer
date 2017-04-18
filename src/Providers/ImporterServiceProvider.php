@@ -23,7 +23,7 @@ class ImporterServiceProvider extends ServiceProvider
         }
 
         $this->publishes([
-            __DIR__ . 'config.php' => config_path('importer.php'),
+            __DIR__ . '/../config.php' => config_path('importer.php'),
         ]);
     }
 
