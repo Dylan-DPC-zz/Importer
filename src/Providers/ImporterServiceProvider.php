@@ -18,9 +18,13 @@ class ImporterServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                ImportData::class
+                ImportData::class,
             ]);
         }
+
+        $this->publishes([
+            __DIR__ . 'config.php' => config_path('importer.php'),
+        ]);
     }
 
     /**
