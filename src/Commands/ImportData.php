@@ -1,4 +1,6 @@
-<?php namespace Dpc\Importer\Commands;
+<?php
+
+namespace Dpc\Importer\Commands;
 
 use Dpc\Importer\ImporterContract;
 use Illuminate\Console\Command;
@@ -19,6 +21,11 @@ class ImportData extends Command
      */
     protected $description = 'Runs the seeds to import';
 
+    /**
+     * The data importer.
+     *
+     * @var \Dpc\Importer\ImporterContract
+     */
     protected $importer;
 
     /**
@@ -28,6 +35,7 @@ class ImportData extends Command
     public function __construct(ImporterContract $importer)
     {
         $this->importer = $importer;
+
         parent::__construct();
     }
 
