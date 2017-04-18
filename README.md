@@ -5,12 +5,9 @@
 # Laravel Importer
 
 ## Requirements: 
+* PHP 7 
+* Laravel 5.4
 
-<ul>
-<li> PHP 7 </li>
-<li> Laravel 5.4
-
-</ul>
 
 ## Why?
 
@@ -95,11 +92,9 @@ Do star this repo. It means a lot to the author (oh wait.. that's me :P )
 
 # What's Next? 
 
-<ul>
-<li> Data Chunking </li>
-<li> Flexibility to queue the seeders </li>
-<li> Option to run using a cron job </li>
-</ul>
+* Data Chunking 
+* Flexibility to queue the seeders 
+* Option to run using a cron job 
 
 # Wanna Contribute?
 
@@ -109,7 +104,5 @@ If you find any issues or want to make future proposals, create an issue here.
 
 # Wanna contact me? 
 
-<ul> 
-  <li> Twitter: <a href="https://twitter.com/DPC_22"> @DPC_22 </a> </li>
-  <li> Email: dylan.dpc@gmail.com
-</ul>
+  * Twitter: <a href="https://twitter.com/DPC_22"> @DPC_22 </a> 
+  * Email: dylan.dpc@gmail.com
