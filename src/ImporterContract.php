@@ -3,7 +3,5 @@
 
 interface ImporterContract
 {
-
     public function import() : self;
-
 }

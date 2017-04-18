@@ -14,7 +14,6 @@ class ForeignConnectionManager implements ForeignConnectionContract
 
     public function table(string $table)
     {
-
       return DB::connection($this->connection)->table($table);
     }
     

@@ -4,5 +4,4 @@
 interface ForeignConnectionContract
 {
     public function table(string $table);
-
 }
