@@ -12,7 +12,10 @@ class Importer implements ImporterContract
         DB::transaction(function () use ($seeders) {
             collect($seeders)->each(function ($seeder) {
                 $seeder = App::make($seeder);
-                $seeder->prepareData()->seed();
+                $seeder->getData()->chunk(config('importer.chunkBy'), function ($rows) use ($seeder) {
+                    $seeder->setData($rows)->prepareData()->seed();
+                });
+
             });
         });
         return $this;
