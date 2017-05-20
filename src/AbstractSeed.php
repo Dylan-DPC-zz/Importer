@@ -14,12 +14,16 @@ abstract class AbstractSeed
     public function __construct(ForeignConnectionContract $manager)
     {
         $this->manager = $manager;
-        $this->data = $this->getData();
-
     }
 
 
     abstract public function getData();
+
+    public function setData($data): AbstractSeed
+    {
+      $this->data = $data;
+      return $this;
+    }
 
     public function prepareData() : AbstractSeed
     {
