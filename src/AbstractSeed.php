@@ -30,12 +30,6 @@ abstract class AbstractSeed
       return $this;
     }
 
-    public function chunkData(): AbstractSeed
-    {
-        $this->data->chunk(50);
-        return $this;
-    }
-
     abstract public function seed();
 
 }
