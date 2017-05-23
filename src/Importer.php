@@ -16,7 +16,7 @@ class Importer implements ImporterContract
                     throw new SeederNotFoundException($seeder);
                 }
                 $seeder->getData()->chunk(config('importer.chunkBy'), function ($rows) use ($seeder) {
-                    $seeder->setData($rows)->prepareData()->seed();
+                    return $seeder->setData($rows)->prepareData()->seed();
                 });
 
             });
