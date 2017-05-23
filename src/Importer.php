@@ -6,9 +6,9 @@ use Illuminate\Support\Facades\DB;
 
 class Importer implements ImporterContract
 {
-    public function import(array $seed = []) : ImporterContract
+    public function import(string $seed = null) : ImporterContract
     {
-        $seeders = $seed ? $seed : config('importer.seeds');
+        $seeders = $seed ?? config('importer.seeds');
         DB::transaction(function () use ($seeders) {
             collect($seeders)->each(function ($seeder) {
                 $seeder = App::make($seeder);
