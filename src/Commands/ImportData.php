@@ -38,8 +38,6 @@ class ImportData extends Command
      */
     public function handle()
     {
-
         return $this->importer->import($this->argument('seed') ?? null);
-
     }
 }
