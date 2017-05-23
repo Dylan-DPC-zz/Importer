@@ -10,7 +10,7 @@ class ImportData extends Command
      *
      * @var string
      */
-    protected $signature = 'importer:import {--seed=* : file path to seed to import }';
+    protected $signature = 'importer:import {seed? : file path to seed to import }';
 
     /**
      * The console command description.
@@ -38,6 +38,6 @@ class ImportData extends Command
      */
     public function handle()
     {
-        return $this->importer->import($this->argument('seed'));
+        return $this->importer->import($this->argument('seed') ?? []);
     }
 }
