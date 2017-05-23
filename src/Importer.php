@@ -13,7 +13,7 @@ class Importer implements ImporterContract
             collect($seeders)->each(function ($seeder) {
                 $seeder = App::make($seeder);
                 if (!$seeder) {
-                    throw new SeederNotFoundException;
+                    throw new SeederNotFoundException($seeder);
                 }
                 $seeder->getData()->chunk(config('importer.chunkBy'), function ($rows) use ($seeder) {
                     $seeder->setData($rows)->prepareData()->seed();
