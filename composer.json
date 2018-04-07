@@ -21,11 +21,11 @@
     "require-dev": {
         "phpunit/phpunit": "^7.0"
     },
-	"extra": { 
-		"laravel": {
-			"providers": [
-				"Dpc\\Importer\\Providers\\ImporterServiceProvider"
-			]
-		}
-	}
+	  "extra": { 
+		    "laravel": {
+			    "providers": [
+				    "Dpc\\Importer\\Providers\\ImporterServiceProvider"
+			    ]
+		    }
+	   }
 }
