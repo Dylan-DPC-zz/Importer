@@ -6,7 +6,7 @@
 
 ## Requirements: 
 * PHP 7 
-* Laravel 5.x
+* Laravel 5.6
 
 
 ## Why?
