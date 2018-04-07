@@ -24,7 +24,7 @@
 	"extra": { 
 		"laravel": {
 			"providers": [
-				"Dpc\Importer\Providers\ImporterServiceProvider"
+				"Dpc\\Importer\\Providers\\ImporterServiceProvider"
 			]
 		}
 	}
